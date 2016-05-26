@@ -26,8 +26,8 @@ describe 'Adding todo items' do
     click_link 'New Todo Item'
     fill_in 'Content', with: ''
     click_button 'Save'
-    within('div.flash') do
-      expect(page).to have_content('There was a problem adding that todo list item')
+    within('div.flasherror') do
+      expect(page).to have_content('There was a problem adding that todo list item' )
     end
     expect(page).to have_content('Content is too short')
   end
