@@ -10,7 +10,7 @@ describe 'Deleting todo items' do
       click_link 'List Items'
     end
   end
-
+  
   it 'is successful' do
     visit_todo_list(todo_list)
     within "#todo_item_#{todo_item.id}" do
