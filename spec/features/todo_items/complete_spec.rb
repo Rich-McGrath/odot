@@ -11,6 +11,6 @@ describe 'Completing todo items' do
       click_link 'Mark Complete'
     end
     todo_item.reload
-    expect(todo_item.completed_at).to_nol be_nil
+    expect(todo_item.completed_at).to_not be_nil
   end
 end
